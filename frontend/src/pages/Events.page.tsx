@@ -1,9 +1,9 @@
 import Grid from "@mui/material/Grid";
-import Navbar from "../components/shared/Navbar";
 // import Stack from "@mui/material/Stack";
 import { EventI } from "../interfaces/event.interface";
 import { Box, Button, Divider, Typography } from "@mui/material";
 import EventCard from "../components/features/EventCard";
+import Layout from "../components/core/Layout";
 
 const Events = () => {
    const events: EventI[] = [
@@ -63,7 +63,7 @@ const Events = () => {
 
    return (
       <div>
-         <Navbar />
+         <Layout>
          <Grid
             container
             pt={6}
@@ -73,6 +73,7 @@ const Events = () => {
          >
             <Grid item justifyContent={"center"} width={"100%"}>
                <Box
+                  className="bg"
                   p={3}
                   bgcolor={"white"}
                   boxShadow={0.5}
@@ -98,6 +99,7 @@ const Events = () => {
                </Box>
             </Grid>
          </Grid>
+         </Layout>
       </div>
    );
 };

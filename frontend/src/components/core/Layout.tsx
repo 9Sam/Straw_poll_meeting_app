@@ -1,3 +1,4 @@
+import Footer from "../shared/Footer";
 import Navbar from "../shared/Navbar";
 import Box from "@mui/material/Box";
 
@@ -10,6 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Box>
          <Navbar></Navbar>
          <Box p={2}>{children}</Box>
+         <Footer></Footer>
       </Box>
    );
 };
