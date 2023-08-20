@@ -1,5 +1,11 @@
 import { createTheme } from "@mui/material";
 
+export const Theme = {
+   colors: {
+      primary: "#FF7144",
+   }
+} 
+
 export const theme = createTheme({
    typography: {
       button: {
@@ -19,8 +25,7 @@ export const theme = createTheme({
       },
       success: {
          main: "#22A699",
-         light: "#22A699",
-         dark: "#22A699",
+         light: "#22A699", 
       },
       warning: {
          main: "#F2BE22",
